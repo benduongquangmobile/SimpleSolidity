@@ -35,3 +35,5 @@ contract SimpleStorage {
         nameToFavoriteNumber[_name] = _favoriteNumber;
     }
 }
+
+// 3:02:22 / 1:07:54:30
