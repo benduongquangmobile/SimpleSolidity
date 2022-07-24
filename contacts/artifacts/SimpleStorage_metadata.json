@@ -24,19 +24,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "getFavoriteNumber",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -67,13 +54,26 @@
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "farvoriteNumber",
+						"name": "favoriteNumber",
 						"type": "uint256"
 					},
 					{
 						"internalType": "string",
 						"name": "name",
 						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -87,7 +87,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "setFavoriteNumber",
+				"name": "store",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -121,11 +121,11 @@
 	},
 	"sources": {
 		"contacts/SimpleStorage.sol": {
-			"keccak256": "0xb2c70fe8cb9f3d307dc5d9a447ffb828422d73f51ade75cac8ad3b0e41fe2e6c",
+			"keccak256": "0x492b0bc9d92ea793b7f815df63d6e2347beadab103b5fa3f87a856d9d2ba560f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://97960840756b5f479661e0b4a7453757137a33ebeb0d96aaff5b543f509a450a",
-				"dweb:/ipfs/QmSxBRJk5fBFj1zsuDja6vZaT82pi2SBCKjHv8fDKhddgB"
+				"bzz-raw://b6e406d2c5c853027fd5cab062b589306c407c152bdc2da6dcd267ba82091a98",
+				"dweb:/ipfs/QmRhZJ25kL1WKdc9bYTsuVdeNKWDjzoB93pCtPHYQgbDsV"
 			]
 		}
 	},

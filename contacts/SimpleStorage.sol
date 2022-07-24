@@ -3,25 +3,23 @@ pragma solidity ^0.8.15; // solidity 0.8.15
 
 contract SimpleStorage {
     // boolean, unit, init, address, bytes
-    uint256 farvoriteNumber;
+    uint256 favoriteNumber;
+
+    struct People {
+        uint256 favoriteNumber;
+        string name;
+    }
+    // uint256[] public anArray;
+    People[] public people;
 
     mapping(string => uint256) public nameToFavoriteNumber;
 
-    struct People {
-        uint256 farvoriteNumber;
-        string name;
+    function store(uint256 _favoriteNumber) public virtual {
+        favoriteNumber = _favoriteNumber;
     }
 
-    People[] public people;
-
-    function setFavoriteNumber(uint256 _favoriteNumber) public {
-        farvoriteNumber = _favoriteNumber;
-        getFavoriteNumber();
-    }
-
-    // view, pure don't have to pay gas
-    function getFavoriteNumber() public view returns (uint256) {
-        return farvoriteNumber;
+    function retrieve() public view returns (uint256) {
+        return favoriteNumber;
     }
 
     // calldata, memory, storage
