@@ -3,22 +3,22 @@ pragma solidity ^0.8.15; // solidity 0.8.15
 import "./SimpleStorage.sol";
 
 contract StorageFactory {
-    SimpleStorage[] public simpleStorageArray;
+  SimpleStorage[] public simpleStorageArray;
 
-    function createSimpleStorageContract() public {
-        SimpleStorage simpleStorage = new SimpleStorage();
-        simpleStorageArray.push(simpleStorage);
-    }
+  function createSimpleStorageContract() public {
+    SimpleStorage simpleStorage = new SimpleStorage();
+    simpleStorageArray.push(simpleStorage);
+  }
 
-    function fsStore(uint256 _simpleStorageIndex, uint256 _simpleStorageNumber)
-        public
-    {
-        // Address
-        // ABI - Application Binary Interface
-        simpleStorageArray[_simpleStorageIndex].store(_simpleStorageNumber);
-    }
+  function fsStore(uint256 _simpleStorageIndex, uint256 _simpleStorageNumber)
+    public
+  {
+    // Address
+    // ABI - Application Binary Interface
+    simpleStorageArray[_simpleStorageIndex].store(_simpleStorageNumber);
+  }
 
-    function sfGet(uint256 _simpleStorageIndex) public view returns (uint256) {
-        return simpleStorageArray[_simpleStorageIndex].retrieve();
-    }
+  function sfGet(uint256 _simpleStorageIndex) public view returns (uint256) {
+    return simpleStorageArray[_simpleStorageIndex].retrieve();
+  }
 }

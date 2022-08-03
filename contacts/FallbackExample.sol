@@ -2,15 +2,15 @@
 pragma solidity ^0.8.15;
 
 contract FallbackExample {
-    uint256 public result;
+  uint256 public result;
 
-    receive() external payable {
-        result = 1;
-    }
+  receive() external payable {
+    result = 1;
+  }
 
-    fallback() external payable {
-        result = 2;
-    }
+  fallback() external payable {
+    result = 2;
+  }
 }
 
 // Explainer from: https://solidity-by-example.org/fallback/
@@ -20,7 +20,7 @@ contract FallbackExample {
 //         yes  no
 //         /     \
 //    receive()?  fallback()
-//     /   \
+//     /   \w
 //   yes   no
 //  /        \
 //receive()  fallback()
