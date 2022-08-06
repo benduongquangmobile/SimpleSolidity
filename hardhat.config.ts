@@ -4,6 +4,7 @@ import "hardhat/config"
 import "dotenv/config"
 import "hardhat-gas-reporter"
 import "solidity-coverage"
+import "@typechain/hardhat"
 
 const RINKEBY_PROVIDER_URL = process.env.RPC_URL
 const PRIVATE_KEY = process.env.PRIVATE_KEY
