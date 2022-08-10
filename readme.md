@@ -21,3 +21,6 @@ For testing
 <b>Check file and line didn't test solidity-coverage</b>
 <br/>
 ```yarn hardhat coverage```
+
+<b>Generate type using typechain-types
+```yarn hardhat typechain```

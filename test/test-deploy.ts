@@ -17,8 +17,6 @@ describe("SimpleStorage", () => {
   it("should start with a value of 0", async () => {
     const currentValue = await simpleStorage.retrieve()
     const expectedValue = "0"
-    // assert
-    // expect
     assert.equal(currentValue.toString(), expectedValue)
   })
 
